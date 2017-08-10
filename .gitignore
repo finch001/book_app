@@ -1,0 +1,9 @@
+# Created by .ignore support plugin (hsz.mobi)
+# dependencies
+/node_modules
+
+# testing
+/test
+
+# production
+/build
