@@ -13,11 +13,12 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(express.session({ secret: 'finch.blog', cookie: { maxAge: 80000 } }));
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.use('/api', api);
 
-app.get('*', (req: any, res: any) => {
+app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname + '/build/index.html'));
 });
 
