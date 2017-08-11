@@ -51,6 +51,9 @@
     "react-redux": "^5.0.4"
   },
   "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-jsxhint": "^0.8.0",
     "jest": "^20.0.4"
   },
   "scripts": {

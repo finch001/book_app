@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "supervisor ./bin/www",
-    "start": "npm run build ",
+    "serve": "node ./bin/www",
+    "start": "npm run serve ",
     "build": "npm run build-ts",
     "build-ts": "tsc",
     "watch-ts": "tsc -w"
